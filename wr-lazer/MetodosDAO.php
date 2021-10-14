@@ -1,4 +1,4 @@
-<?php
+<link rel = "stylesheet" href = "css/estilo.css" > <?php
 
 include 'conexao.php';
 class wrlazer
@@ -27,6 +27,31 @@ class wrlazer
           }
           
      }
-}
+     function produtos(){
+          global $conexao;
 
-?>
+    $SELECT = "SELECT*FROM tb_manufaturado";
+    $PRODUTOS = mysqli_query($conexao,$SELECT);
+
+    while ($infos = mysqli_fetch_array($PRODUTOS)) {?> 
+    <div class = "card" > <img src="img/img01.png" alt="Denim Jeans" style="width:200px">
+    <!--PUXAR IMAGEM DO PRODUTO-->
+    <h1>
+        <!--PUXAR O NOME DO PRODUTO-->
+    </h1>
+    <p class="price">R$
+        <?php echo $infos['valor'];?>,00</p>
+    <?php echo $infos['qtd_manufaturado'];?>
+    <p >Descriçao:<?php echo $infos['descricao_manufaturado'];?></p>
+    <p>
+        <button>Adicionar ao carrinho</button>
+    </p>
+</div>
+
+<?php
+    }
+
+    
+
+     }
+}
