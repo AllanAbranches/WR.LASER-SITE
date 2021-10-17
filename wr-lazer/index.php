@@ -9,10 +9,14 @@
     </head>
     <body>
         <div class="Parte de cima"></div>
-        <?php 
+        <center>
+            <?php 
             require_once 'MetodosDAO.php';
             $wrlazer = new Wrlazer;
             $wrlazer->produtos();
             ?>
+        </center>
+     
+
     </body>
 </html>

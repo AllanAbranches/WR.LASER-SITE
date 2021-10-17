@@ -1,4 +1,6 @@
-<link rel = "stylesheet" href = "css/estilo.css" > <?php
+
+        <link rel = "stylesheet" href = "css/style.css" > 
+<?php
 
 include 'conexao.php';
 class wrlazer
@@ -29,25 +31,17 @@ class wrlazer
      }
      function produtos(){
           global $conexao;
-
-    $SELECT = "SELECT*FROM tb_manufaturado";
-    $PRODUTOS = mysqli_query($conexao,$SELECT);
-
-    while ($infos = mysqli_fetch_array($PRODUTOS)) {?> 
-    <div class = "card" > <img src="img/img01.png" alt="Denim Jeans" style="width:200px">
-    <!--PUXAR IMAGEM DO PRODUTO-->
-    <h1>
-        <!--PUXAR O NOME DO PRODUTO-->
-    </h1>
-    <p class="price">R$
-        <?php echo $infos['valor'];?>,00</p>
-    <?php echo $infos['qtd_manufaturado'];?>
-    <p >Descriçao:<?php echo $infos['descricao_manufaturado'];?></p>
-    <p>
-        <button>Adicionar ao carrinho</button>
-    </p>
+          $SELECT = "SELECT*FROM tb_manufaturado";
+          $PRODUTOS = mysqli_query($conexao,$SELECT);
+          while ($produto = mysqli_fetch_array($PRODUTOS)) {?> 
+          <div class="container">
+          <div class = "card" > <img src="img/img01.png" alt="Denim Jeans" style="width:200px">
+          <!--PUXAR IMAGEM DO PRODUTO-->
+          <p><?php echo $produto['descricao_manufaturado'];?></p>
+          <p class="price">R$<?php echo $produto['valor'];?>,00</p>
+         <?php  echo '<a href="carrinho.php?add=carrinho&id='.$produto['id_manufaturado'].'">ADICIONAR AO CARRINHO</a>' ?>
+          </div>
 </div>
-
 <?php
     }
 
@@ -55,3 +49,5 @@ class wrlazer
 
      }
 }
+
+
