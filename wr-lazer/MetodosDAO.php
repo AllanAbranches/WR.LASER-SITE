@@ -33,13 +33,13 @@ class wrlazer
           global $conexao;
           $SELECT = "SELECT*FROM tb_manufaturado";
           $PRODUTOS = mysqli_query($conexao,$SELECT);
-          while ($produto = mysqli_fetch_array($PRODUTOS)) {?> 
+          while ($produto = mysqli_fetch_assoc($PRODUTOS)) {?> 
           <div class="container">
           <div class = "card" > <img src="img/img01.png" alt="Denim Jeans" style="width:200px">
           <!--PUXAR IMAGEM DO PRODUTO-->
           <p><?php echo $produto['descricao_manufaturado'];?></p>
           <p class="price">R$<?php echo $produto['valor'];?>,00</p>
-         <?php  echo '<a href="carrinho.php?add=carrinho&id='.$produto['id_manufaturado'].'">ADICIONAR AO CARRINHO</a>' ?>
+          <?php  echo '<a href="carrinho.php?acao=add&id='.$produto['id_manufaturado'].'">ADICIONAR AO CARRINHO</a>' ?>
           </div>
 </div>
 <?php

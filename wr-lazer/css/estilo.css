@@ -15,6 +15,7 @@
 .price {
     color: grey;
     font-size: 22px;
+    font-weight: bold;
 }
 
 .card button {

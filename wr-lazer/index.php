@@ -16,7 +16,5 @@
             $wrlazer->produtos();
             ?>
         </center>
-     
-
     </body>
 </html>
