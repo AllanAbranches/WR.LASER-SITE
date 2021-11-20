@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+}
+
+.form-log-fundo{
+    width: 650px;
+    height: 500px;
+    margin-top: 50px;
+    background-color: #3a3a3a;
+
+}
+
+.form-log-pt{
+    padding: 0px 10px 0px 0px;
+
+}
+
+
+.caixas-log{
+    width: 180px;
+    padding: 8px;
+    margin-top: 10px;
+}
+
+.btn-log{
+    margin-left: 105px;
+    margin-top: 60px;
+    width: 180px;
+    padding:8px;
+}
+
+.link-log{
+    text-decoration: none;
+}
