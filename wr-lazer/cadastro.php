@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "css/cad.css" > 
+        <link rel = "stylesheet" href = "css/cad.css"> 
         <title>Cadastro</title>
         <!-- Adicionando JQuery -->
         <script
@@ -43,13 +43,16 @@
                     <input class="caixas-cad" type="text" name="cidade" placeholder="CIDADE" id="cidade" value=""><br>
                     <input class="caixas-cad" type="text" name="uf" placeholder="UF" id="uf" size="2" value=""><br>
                     <input class="caixas-cad" type="text" name="numero_end" placeholder="NUMERO DO ENDEREÇO"><br>
-                    <input class="caixas-cad" type="text" name="complemento" placeholder="COMPLEMENTO"><br>
+                    <input class="caixas-cad" type="text" name="complemento" placeholder="COMPLEMENTO"><br><br><br>
+                 <div class="mov-btn-cad">
+                    <input class="btn-cad" type="submit" name="btn_cadastrar" value="CADASTRAR">
+                 </div>
+                    
                 </form>
              </div>          
-         </div>
-                  <div class="mov-btn-cad">
-                    <input class="btn-cad" type="submit" name="btn_cadastrar" value="CADASTRAR">
-                  </div>     
+         </div>    
+                  
+                     
       </div>
     </center>
         <?php 

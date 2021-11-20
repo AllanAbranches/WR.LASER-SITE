@@ -28,17 +28,18 @@ session_start();
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link
-            rel="stylesheet"
-            href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-            integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-            crossorigin="anonymous">
-        <title>Document</title>
+        <link rel = "stylesheet" href = "css/carrinho.css"> 
+        <link rel="stylesheet" 
+              href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+              integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+              crossorigin="anonymous">
+        <title>Carrinho</title>
     </head>
     <body>
-        <h1 style="text-align:center; font-weight: bold;">TELA DE CARRINHO</h1>
-
-
+        <div class="topo-carrinho">
+            <img class="logo-carrinho" src="./img/logo.png" alt="" > 
+        </div> 
+        <br><br>
 
     <?php
 
@@ -64,11 +65,11 @@ foreach($_SESSION['carrinho'] as $id_produto=>$qtd){
     $SELECT = "SELECT*FROM tb_manufaturado WHERE id_manufaturado='$id_produto'";
     $QUERY = mysqli_query($conexao, $SELECT);
     $VAR = mysqli_fetch_assoc($QUERY);
-$Desc = $VAR['descricao_manufaturado'];
-    $dimensao = $VAR['dimensao'];
+    $Desc = $VAR['descricao_manufaturado'];
+    $DIMENSAO = $VAR['dimensao_manufaturado'];
     $valor = number_format($VAR['valor'],2,",",".");
     $SUBTOTAL =number_format($VAR['valor']*$qtd,2,",",".");
-    $total += $SUBTOTAL; 
+    $TOTAL = $SUBTOTAL;
 
     echo '
     <tbody>
@@ -90,7 +91,7 @@ $Desc = $VAR['descricao_manufaturado'];
 </tbody>
     <?php 
     echo '<tr>
-    <td colspan="4">TOTAL    R$ '.$total.'</td>
+    <td colspan="4">TOTAL    R$ '.$TOTAL.'</td>
     </tr>
     '
     

@@ -12,15 +12,18 @@
     <body>
         <center>
     <div class="form-log-fundo">
-        <img src="../wr-lazer/img/logo.png" alt="">
+        <img class="logo-log" src="../wr-lazer/img/logo.png" alt="">
         <div class="form-log-pt">
             <form action="" method="post">
                 <input class="caixas-log" type="email" placeholder="E-mail" name="txt_email"><br>
                 <input class="caixas-log" type="password" placeholder="Senha" name="txt_senha"><br>
+                <input class="caixas-log" type="submit" name="btn_entrar" value="ENTRAR"><br><br><br>
             </form>
-            <input class="caixas-log" type="submit" name="btn_entrar"><br><br><br>
+            <div class="mov-btn-log">
+                
                 <a class="link-log" href="cadastro.php">AINDA NAO SE CADASTROU? CADASTRE-SE</a>
                 
+            </div> 
         </div>
     </div>
        

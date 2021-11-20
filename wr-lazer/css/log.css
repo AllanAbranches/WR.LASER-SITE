@@ -3,11 +3,10 @@ body{
 }
 
 .form-log-fundo{
-    width: 650px;
+    width: 600px;
     height: 500px;
     margin-top: 50px;
     background-color: #3a3a3a;
-
 }
 
 .form-log-pt{
@@ -28,7 +27,12 @@ body{
     width: 180px;
     padding:8px;
 }
+.logo-log{
+    margin-top: 10px;
+}
 
 .link-log{
+    font-size: 10px;
+    color:aliceblue;
     text-decoration: none;
 }
