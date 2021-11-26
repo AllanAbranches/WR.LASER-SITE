@@ -1,18 +1,6 @@
 <?php include "conexao.php";
 $id = filter_input(INPUT_GET,'id');
-$select = "SELECT ID_FUNCIONARIO AS 'ID',
-NOME_FUNCIONARIO AS 'NOME',
-SOBRENOME_FUNCIONARIO AS 'SOBRENOME',
-CPF_FUNCIONARIO AS 'CPF',
-EMAIL_FUNCIONARIO AS 'EMAIL',
-SENHA_FUNCIONARIO AS 'SENHA',
-DT_NASCIMENTO_FUNCIONARIO AS 'DATA NASCIMENTO',
-SEXO_FUNCIONARIO AS 'SEXO',
-DT_CONTRATACAO_FUNCIONARIO 'DATA CONTRATAÇÃO',
-NOME_CARGO AS 'CARGO',
-SALARIO_CARGO AS 'SALARIO CARGO'
-FROM TB_FUNCIONARIO
-INNER JOIN TB_CARGO on TB_FUNCIONARIO.ID_FUNCIONARIO = TB_CARGO.ID_CARGO WHERE id_funcionario = '$id'";
+$select = "SELECT * FROM TB_FUNCIONARIO WHERE id_funcionario = '$id'";
 $query = mysqli_query($conexao, $select);
 $row  = mysqli_fetch_assoc($query);
 
@@ -26,22 +14,23 @@ $row  = mysqli_fetch_assoc($query);
     <title>Editar Funcionário</title>
 </head>
 <body>
-    <form action="" method="post">
-        ID:  <?php echo $row['ID'];?><br>
-        <input type="text" name="nome" value="<?php echo $row['NOME'];?>"><br>
-        <input type="text" name="nome" value="<?php echo $row['SOBRENOME'];?>"><br>
-        <input type="text" name="nome" value="<?php echo $row['EMAIL'];?>"><br>
-        <input type="text" name="nome" value="<?php echo $row['CPF'];?>"><br>
-        <input type="date" name="nome" value="<?php echo $row['DATA NASCIMENTO'];?>"><br>
-        <input type="text" name="nome" value="<?php echo $row['SEXO'];?>"><br>
-        <input type="date" name="nome" value="<?php echo $row['DATA CONTRATAÇÃO'];?>"><br>
+    <form action="alterarFuncionario.php" method="post">
+        ID:  <?php echo $row['id_funcionario'];?><br>
+        <input type="text" name="nome" value="<?php echo $row['nome_funcionario'];?>"><br>
+        <input type="text" name="sobrenome" value="<?php echo $row['sobrenome_funcionario'];?>"><br>
+        <input type="text" name="email" value="<?php echo $row['email_funcionario'];?>"><br>
+        <input type="text" name="cpf" value="<?php echo $row['cpf_funcionario'];?>"><br>
+        <input type="date" name="nasc" value="<?php echo $row['dt_nascimento_funcionario'];?>"><br>
+        <input type="text" name="sexo" value="<?php echo $row['sexo_funcionario'];?>"><br>
+        <input type="date" name="contrat" value="<?php echo $row['dt_contratacao_funcionario'];?>"><br>
         <select name="select_cargo" id="">
                 <option >SELECIONE</option>
-                <?php $SELECT = "SELECT*FROM tb_cargo"; $RESULTADO = mysqli_query($conexao,$SELECT);
+                <?php $SELECT = "SELECT*FROM TB_CARGO"; $RESULTADO = mysqli_query($conexao,$SELECT);
                 while($cargo = mysqli_fetch_assoc($RESULTADO)){ ?>
                 <option value="<?php echo $cargo['id_cargo']; ?>"><?php echo $cargo['nome_cargo']; ?></option>
                 <?php } ?>
             </select>
+            <input type="submit" value="ATUALIZAR" name="btn_atualizar">
     </form>
 </body>
 </html>

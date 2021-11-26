@@ -18,7 +18,7 @@
 
         <form action="" method="post" class="frm">
 
-            <input type="text" name="funcionario" placeholder="Nome do Funcionario">
+            <input type="text" name="nome" placeholder="Nome do Funcionario">
             <input type="text" class="sobrenome" name="sobrenome" placeholder="Sobrenome">
             <input type="text" name="email" placeholder="E-mail">
             <input type="text" name="cpf" placeholder="CPF">
@@ -47,9 +47,9 @@
                 <?php } ?>
             </select>
             <input type="submit" name="btn_cadd" value="CADASTRAR">
-            
+
         </form>
-     
+
     </body>
 </html>
 
@@ -63,14 +63,14 @@
         display: block;
         padding: 8px;
     }
-    .frm{
- 
-        margin-left:auto;
-        margin-right:auto;
-        display:block;
+    .frm {
+
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
     }
-    .sobrenome{
-        display:block;
+    .sobrenome {
+        display: block;
     }
 </style>
 <?php
@@ -80,7 +80,7 @@
             
             $select_cargo =$_POST['select_cargo'];
             //$salario =$_POST['salario'];
-            $funcionario =$_POST['funcionario'];
+            $funcionario =$_POST['nome'];
             $sobrenome =$_POST['sobrenome'];
             $email =$_POST['email'];
             $cpf =$_POST['cpf'];
@@ -88,7 +88,7 @@
             $sexo =$_POST['sexo'];
             $contratacao =$_POST['contratacao'];
 
-            $wrlazer->Cadastro_manufaturado($select_cargo,$funcionario,$sobrenome,$email,$cpf,$nasc,$sexo,$contratacao);
+            $wrlazer->cadastro_funcionario($select_cargo,$funcionario,$sobrenome,$email,$cpf,$nasc,$sexo,$contratacao);
         }
 
 
