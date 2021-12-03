@@ -4,7 +4,7 @@ $username = "root";
 $password = "";
 $database = "bd_wrlazer";
 
-$conexao = mysqli_connect($localhost,$username,$password,$database);
+$conexao = mysqli_connect($localhost,$username,$password,$database );
 
 if($conexao){
 
