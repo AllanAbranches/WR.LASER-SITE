@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+
+/*Formulário Cadastro*/
+.form-cad-fundo{
+    width: 800px;
+    height: 700px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: #3a3a3a;
+
+}
+
+.form-cad-pt{
+    padding: 0px 160px 0px 0px;
+
+}
+
+.form-cad-pt2{
+    padding-right: 20px;
+    float: right;
+}
+
+.caixas-cad{
+    margin-top: 10px;
+    width: 180px;
+    padding: 8px;
+}
+
+.mov-btn-cad{
+    float: left;
+}
+
+.btn-cad{
+    width: 180px;
+    padding:8px;
+}
+
