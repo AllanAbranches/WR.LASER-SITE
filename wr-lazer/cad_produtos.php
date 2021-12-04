@@ -54,7 +54,7 @@
         $select_tipo_manu =$_POST['select_tipo_manu'];
         $select_porte_manu =$_POST['select_porte_manu'];
 		
-        $wrlazer->cadastro_funcionario($nome_manu,$desc_manu,$valor_manu,$conteudo, 
+        $wrlazer->Cadastro_manufaturado($nome_manu,$desc_manu,$valor_manu,$conteudo, 
         $dimensao_manu,$select_tipo_manu,$select_porte_manu);
     }
 ?>

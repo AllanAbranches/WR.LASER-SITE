@@ -252,8 +252,6 @@ echo "<a class='tag_a' href='cad_funcionario.php?pagina=$quantidade_pg'>>></a>";
 }
 
 
-        }
-
     </style>
     <?php
         require_once 'MetodosDAO.php';
