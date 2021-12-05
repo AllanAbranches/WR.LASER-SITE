@@ -11,13 +11,13 @@ class wrlazer
           if($resultado->num_rows >0){
                header('Location:index.php');
           }else{
-               echo "<br><center>EMAIL OU SENHA INCORRETOS</center>";
+               echo "<center><div class='alert alert-danger' style='max-width: 410px;' role='alert'>EMAIL OU SENHA INCORRETOS</div></center>";
           }
      }
      #endregion
 
      #region Cadastrar Cliente
-     function cadastrar($nome,$sobrenome,$email,$senha,$dt_nas,$cpf,$cep,$bairro,$rua,$cidade,$numero_end,$complemento,$sexx  ){
+     function cadastrarCliente($nome,$sobrenome,$email,$senha,$dt_nas,$cpf,$cep,$bairro,$rua,$cidade,$numero_end,$complemento,$sexx  ){
           global $conexao; 
           try {    
                $nome = mysqli_real_escape_string($conexao,$nome);              
@@ -94,6 +94,29 @@ class wrlazer
           }else{
               echo '<h1>USUARIO NAO FOI APAGADO</h1>';
               header("Location:listar_funcionario.php");
+          }
+     }
+     
+     function cadastrar_fornecedor($name,$cnpj,$email,$tel){
+          global $conexao;
+          try {    
+               mysqli_query($conexao,"INSERT INTO `tb_fornecedor` (`id_fornecedor`,`nome_fornecedor`, `cnpj_fornecedor`, `email_fornecedor`, `tel_fornecedor`)
+               VALUES (default, '$name', '$cnpj', '$email', '$tel');");
+                            
+          } catch (Exception $erro) {
+              echo "Erro - " . $erro;
+          }
+     }
+     function alterar_fornecedor($id,$name,$cnpj,$email,$tel){
+          global $conexao;
+          try {    
+               mysqli_query($conexao,"UPDATE `bd_wrlazer`.`tb_fornecedor` SET `nome_fornecedor` = '$name',`cnpj_fornecedor` = '$cnpj',`email_fornecedor` = '$email',`tel_fornecedor` = '$tel' WHERE (`id_fornecedor` = '$id');");
+               if(mysqli_affected_rows($conexao)){
+                    echo '<h1>USUARIO ALTERADO</h1>';
+                    header("Location:listarFornecedor.php?pagina=1");
+               }
+          } catch (Exception $erro) {
+              echo "Erro - " . $erro;
           }
      }
 }

@@ -2,10 +2,7 @@ body{
     margin: 0;
 }
 
-.form-cadCliente{
-    width: 800px;
-    height: 700px;
-}
- label{
+label{
      float: left;
- }
+}
+ 

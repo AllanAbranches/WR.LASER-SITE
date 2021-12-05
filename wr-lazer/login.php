@@ -8,76 +8,85 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
         <link rel="stylesheet" href="./css/log.css">
     <title>Login</title>
-</head>
+    </head>
 <body>
-    <div id="logreg-forms">
-        <form class="form-signin">
-            <h1 class="h3 mb-3 font-weight-normal" style="text-align: center"> Sign in</h1>
-            <div class="social-login">
-                <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign in with Facebook</span> </button>
-                <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign in with Google+</span> </button>
-            </div>
-            <p style="text-align:center"> OR  </p>
-            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
-            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
-            
-            <button class="btn btn-success btn-block" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
-            <a href="#" id="forgot_pswd">Forgot password?</a>
-            <hr>
-            <!-- <p>Don't have an account!</p>  -->
-            <button class="btn btn-primary btn-block" type="button" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up New Account</button>
-            </form>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-secondary " >
+      <div class="container">
+        <a class="navbar-brand" href="index.php"><img src="./img/logo.png" width="180px" height="80px" style=" image-rendering: pixelated;"  ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+    </nav>
 
+    <div  style="background-color: white; " id="logreg-forms">
+        <!--FORMULARIO LOGIN-->
+        <form action="" class="form-signin" method="POST" >
+                <center>
+                <div class="fs-2 mb-3">
+                    
+                        <h1>LOGIN</h1><br>
+                </div>
+                    <button class="btn btn-outline-primary" style="width: 180px;" type="button"><span ><i class="fab fa-facebook-f"></i>  Facebook</span></button>
+                    <button class="btn btn-outline-danger" style="width: 180px;" type="button"><span><i class="fab fa-instagram" ></i>  Instagram</span></button>
+                </center>
+                <br>
+                <p style="text-align:center"> OR  </p>
+                  <input type="email" name="email" id="inputEmail" class="form-control" placeholder="Insira seu email" required="" autofocus=""> <br>
+                  <input type="password" name="senha" id="inputPassword" class="form-control" placeholder="Insira sua senha" required="">
+                <button class="btn btn-dark btn-block" style="color: white;" name="btn_entrar" type="submit"><i class="fas fa-sign-in-alt"></i> Sign in</button>
+             <div class="social-login">
+            
+            <a style="color: blue;" href="" id="forgot_pswd">Esqueceu sua senha?</a>
+           
+            </div>
+            <hr>
+            
+            <!-- <p>Don't have an account!</p>  -->
+            <a href="cadastroCliente.php" style="color: black;"  class="btn btn-outline-dark btn-block" type="submit" name="btn_newAccount" id="btn-signup"><i class="fas fa-user-plus"></i> Sign up</a>
+        </form>
+        <!--FORMULARIO LOGIN-->
             <form action="/reset/password/" class="form-reset">
                 <input type="email" id="resetEmail" class="form-control" placeholder="Email address" required="" autofocus="">
                 <button class="btn btn-primary btn-block" type="submit">Reset Password</button>
                 <a href="#" id="cancel_reset"><i class="fas fa-angle-left"></i> Back</a>
             </form>
-            
-            <form action="/signup/" class="form-signup">
-                <div class="social-login">
-                    <button class="btn facebook-btn social-btn" type="button"><span><i class="fab fa-facebook-f"></i> Sign up with Facebook</span> </button>
-                </div>
-                <div class="social-login">
-                    <button class="btn google-btn social-btn" type="button"><span><i class="fab fa-google-plus-g"></i> Sign up with Google+</span> </button>
-                </div>
-                
-                <p style="text-align:center">OR</p>
+     </div>
 
-                <input type="text" id="user-name" class="form-control" placeholder="Full name" required="" autofocus="">
-                <input type="email" id="user-email" class="form-control" placeholder="Email address" required autofocus="">
-                <input type="password" id="user-pass" class="form-control" placeholder="Password" required autofocus="">
-                <input type="password" id="user-repeatpass" class="form-control" placeholder="Repeat Password" required autofocus="">
-
-                <button class="btn btn-primary btn-block" type="submit"><i class="fas fa-user-plus"></i> Sign Up</button>
-                <a href="#" id="cancel_signup"><i class="fas fa-angle-left"></i> Back</a>
-            </form>
-            <br>
-            
+    <section class="">
+  <!-- Footer -->
+  <footer class="text-center text-white bg-secondary" style="background-color: black;">
+    <!-- Grid container -->
+    <div class="container p-4 pb-0">
+      <!-- Section: CTA -->
+      <section class="">
+        <p class="d-flex justify-content-center align-items-center">
+          <span class="me-3" >Os melhores preços e os produtos da melhor qualidade, aqui na WR.LASER</span>
+        </p>
+      </section>
+      <!-- Section: CTA -->
     </div>
-    
+    <!-- Grid container -->
+
+  </footer>
+  <!-- Footer -->
+</section>
 </body>
 </html>
-
-
-
-
-    <?php            
-            require_once 'MetodosDAO.php';
-            $wrlazer = new Wrlazer;
-            session_start();
-
-            if(isset($_SESSION["logado"])&& $_SESSION["logado"]==true){
-                header("Location:index.php");
-                exit;
-            }
-
-        if (isset($_POST['btn_entrar'])) {
-            $email = $_POST['txt_email'];
-            $senha = $_POST['txt_senha'];
-            $email = mysqli_real_escape_string($conexao,$email);
-            $senha = mysqli_real_escape_string($conexao,$senha);
-
-            $wrlazer->logar($email, $senha);
-        }
+<?php            
+    require_once 'MetodosDAO.php';
+    $wrlazer = new Wrlazer;
+    session_start();
+    if(isset($_SESSION["logado"])&& $_SESSION["logado"]==true){
+       header("Location:index.php");
+       exit;
+    }
+    if (isset($_POST['btn_entrar'])) {
+       $email = $_POST['email'];
+       $senha = $_POST['senha'];
+       $email = mysqli_real_escape_string($conexao,$email);
+       $senha = mysqli_real_escape_string($conexao,$senha);
+       $wrlazer->logar($email, $senha);
+     }
         ?>

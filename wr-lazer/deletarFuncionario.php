@@ -5,7 +5,7 @@
         mysqli_query($conexao, $DELETE);
         if(mysqli_affected_rows($conexao)){
             
-            header("Refresh:2; url=cad_funcionario.php?pagina=1");
+            header("Refresh:2; url=listarFuncionario.php?pagina=1");
         }else{
           
 

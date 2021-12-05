@@ -73,9 +73,8 @@ $row  = mysqli_fetch_assoc($query);
                         </div>
                     </div>
                     <div class="form-group col-md-12 cargo">
-                        <select name="select_cargo" id="inputState" class="form-control" >
+                        <select name="select_cargo" class="form-control" >
                             <option selected="selected" value="<?php echo $row['NOME_CARGO'];?>">Selecione o Cargo</option>
-                            <option>Atual - <?php echo $row['NOME_CARGO'];?></option>
                             <?php $SELECT = "SELECT*FROM tb_cargo"; $RESULTADO = mysqli_query($conexao,$SELECT);
                     while($cargo = mysqli_fetch_assoc($RESULTADO)){ ?>
                             <option value="<?php echo $cargo['id_cargo']; ?>"><?php echo $cargo['nome_cargo']; ?></option>
@@ -112,11 +111,11 @@ if(isset($_POST['btn_cad'])){
         `senha_funcionario` = '$cpf',
         `dt_nascimento_funcionario` = '$nasc',
         `dt_contratacao_funcionario` = '$contratacao', 
-        `fk_cargo` = '3'
+        `fk_cargo` = '$cargo'
          WHERE `tb_funcionario`.`id_funcionario` = '$id';";
     mysqli_query($conexao, $ALTERAR);
     if(mysqli_affected_rows($conexao)){
-    header("Refresh:1; url=cad_funcionario.php?pagina=1");
+    header("Refresh:1; url=listarFuncionario.php?pagina=1");
     }
 
     }
@@ -142,4 +141,3 @@ if(isset($_POST['btn_cad'])){
         transition: border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out;
     }
 </style>
-
