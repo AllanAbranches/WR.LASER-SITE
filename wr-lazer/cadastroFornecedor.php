@@ -16,6 +16,9 @@
 
     <div class="container" style="box-shadow: 0 1px 3px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 24%); width: 400px; margin-top:100px ; margin-left:auto; margin-right:auto; display:block;" >
     <form action="" method="POST">
+      <center>
+        <h1>Cadastrar Fornecedor</h1>
+      </center>
         <div class="form-row">
           <div class="form-group col-md-6">
             <label for="">Nome</label>
@@ -34,8 +37,8 @@
           <label for="">Telefone</label>
           <input type="text" name='tel' class="form-control" placeholder="Telefone">
         </div>
-        <button type="submit" name="btn_cadastrar"  class="btn btn-primary">Cadastrar</button>
-        <a style="color:white" href="listarFornecedor.php?pagina=1"  type="button" class="btn btn-success">Listar</a>
+        <button type="submit" name="btn_cadastrar" class="btn btn-outline-primary">Cadastrar</button>
+        <a  href="listarFornecedor.php?pagina=1"  type="button" class="btn btn-outline-success">Listar</a>
       </form>
       <br>
     </div>

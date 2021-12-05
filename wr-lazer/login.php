@@ -6,14 +6,14 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
-        <link rel="stylesheet" href="./css/log.css">
+        <link rel="stylesheet" href="./css/logCLiente.css">
     <title>Login</title>
     </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-secondary " >
+    <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #FDD31D;" >
       <div class="container">
-        <a class="navbar-brand" href="index.php"><img src="./img/logo.png" width="180px" height="80px" style=" image-rendering: pixelated;"  ></a>
+        <a class="navbar-brand" href="index.php"><img src="./img/logo.png" width="200px" height="100px" style=" image-rendering: pixelated;"  ></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
@@ -54,15 +54,15 @@
             </form>
      </div>
 
-    <section class="">
+    <section class="" >
   <!-- Footer -->
-  <footer class="text-center text-white bg-secondary" style="background-color: black;">
+  <footer class="text-center text-white" style="background-color: #FDD31D;" >
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: CTA -->
       <section class="">
         <p class="d-flex justify-content-center align-items-center">
-          <span class="me-3" >Os melhores preços e os produtos da melhor qualidade, aqui na WR.LASER</span>
+          <span class="me-3"> <br> <br> </span>
         </p>
       </section>
       <!-- Section: CTA -->

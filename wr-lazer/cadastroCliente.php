@@ -19,9 +19,9 @@
     </head>
     <body>
         <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-secondary"  >
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FDD31D;">
     <div class="container">
-      <a class="navbar-brand" href="index.php"><img src="./img/logo.png" widh="180px" height="80px" style=" image-rendering: pixelated;"  ></a>
+      <a class="navbar-brand" href="index.php"><img src="./img/logo.png" width="200px" height="100px" style=" image-rendering: pixelated;"  ></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,7 +30,7 @@
         <br><br>
         <center>
     <div class="shadow p-3 mb-5 bg-white rounded" style=" width: 550px; ">
-            <div style="width: 500px; height: 800px;"><br>
+            <div style="width: 500px; height: 800px;" ><br>
                 <div class="fs-2 mb-3">
                         <h1>CADASTRAR-SE</h1><br>
                 </div>
@@ -101,15 +101,15 @@
     </div>
     <section class="">
   <!-- Footer -->
-  <footer class="text-center text-white bg-secondary" style="background-color: black;">
+  <footer class="text-center text-white bg-secondary">
     <!-- Grid container -->
-    <div class="container p-4 pb-0">
+    <div class="container p-4 pb-0"  style="background-color: #FDD31D;">
       <!-- Section: CTA -->
       <section class="">
         <p class="d-flex justify-content-center align-items-center">
-          <span class="me-3" ><p></p> Enter with your account: <p></p></span>
+          <span class="me-3"><p></p> Enter with your account: <p></p></span>
           <button type="button" class="btn btn-outline-light btn-rounded">
-            <a style="text-decoration: none; color: white;" href="login.php">Sign in</a>
+            <a style="color: white;" href="login.php">Sign in</a>
           </button>
         </p>
       </section>

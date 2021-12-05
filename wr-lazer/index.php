@@ -9,16 +9,16 @@
         <title>Wrlazer</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary  " >
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FDD31D;" >
             <div class="container">
-                    <a class="navbar-brand" href="index.php"><img src="./img/logo.png" width="180px" height="80px" style="image-rendering: pixelated;" ></a>
+                    <a class="navbar-brand" href="index.php"><img src="./img/logo.png" width="200px" height="100px" style="image-rendering: pixelated;" ></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="Index">Produtos</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About</a>
@@ -27,7 +27,7 @@
                             <a class="nav-link" href="#">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Contact</a>
+                            <a class="nav-link" href="https://www.instagram.com/wr.laser/">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -41,19 +41,19 @@
                $wrlazer = new Wrlazer;
                $wrlazer->produtos();
                ?>
-            </div>
+            </div><br><br>
      
         </center>
 <section class="">
-  <footer class="text-center text-white bg-secondary" style="background-color: black;">
+  <footer class="text-center text-white bg-secondary">
     <!-- Grid container -->
-    <div class="container p-4 pb-0">
+    <div class="container p-4 pb-0" style="background-color: #FDD31D;">
         <!-- Section: CTA -->
         <section class="">
             <p class="d-flex justify-content-center align-items-center">
-              <span class="me-3" ><p></p>  Register for free</span>
+              <span class="me-3" ><p></p> Não possui conta ainda?</span>
               <button type="button" class="btn btn-outline-light btn-rounded">
-                Sign up!
+                Cadastre-se!
               </button>
             </p>
         </section>

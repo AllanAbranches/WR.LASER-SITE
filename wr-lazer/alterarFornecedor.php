@@ -41,7 +41,7 @@ $row  = mysqli_fetch_assoc($query);
           <label for="">Telefone</label>
           <input type="text" name='tel' class="form-control" placeholder="Telefone"  value="<?php echo $row['tel_fornecedor'];?>">
         </div>
-        <button type="submit" name="btn_alterar"  class="btn btn-warning">Alterar</button>
+        <button type="submit" name="btn_alterar"  class="btn btn-outline-warning">Alterar</button>
         
       </form>
       <br>
