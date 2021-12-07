@@ -1,7 +1,7 @@
 <?php
 $localhost = "localhost";
 $username = "root";
-$password = "root";
+$password = "";
 $database = "bd_wrlazer";
 
 $conexao = mysqli_connect($localhost,$username,$password,$database);
