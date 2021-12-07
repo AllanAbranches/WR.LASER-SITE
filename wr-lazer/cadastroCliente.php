@@ -19,7 +19,7 @@
     </head>
     <body>
         <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FDD31D;">
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ADD8E6;">
     <div class="container">
       <a class="navbar-brand" href="index.php"><img src="./img/logo.png" width="200px" height="100px" style=" image-rendering: pixelated;"  ></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,7 @@
     <div class="shadow p-3 mb-5 bg-white rounded" style=" width: 550px; ">
             <div style="width: 500px; height: 800px;" ><br>
                 <div class="fs-2 mb-3">
-                        <h1>CADASTRAR-SE</h1><br>
+                        <h1>CADASTRO</h1><br>
                 </div>
                 <form class="row g-3" >
                     <div class="col-md-6">
@@ -69,7 +69,7 @@
                     <br><br><br><br>
                     <div class="col-md-6">
                         <label for="inputNumberHouse" class="form-label">Nº:</label>
-                        <input name="cep" type="text" class="form-control" id="numero_end_cliente" placeholder="">
+                        <input name="numero_end_cliente" type="text" class="form-control" id="numero_end_cliente" placeholder="">
                     </div>
                     <div class="col-md-6">
                         <label for="inputDistrict" class="form-label">Bairro:</label>
@@ -92,7 +92,7 @@
                         </select><br><br><br>
                     </div>
                     <div class="col-12">
-                        <button style="width: 300px;" name="btn_cadastrar" type="submit" class="btn btn-dark btn-block">Sign up</button><br><br>
+                        <button style="width: 300px;" name="btn_cadastrar" type="submit" class="btn btn-dark btn-block">Cadastrar-se</button><br><br>
                     </div>
                 </form>
                 <a href="listarFuncionario.php?pagina=1"></a>
@@ -101,15 +101,15 @@
     </div>
     <section class="">
   <!-- Footer -->
-  <footer class="text-center text-white bg-secondary">
+  <footer class="text-center text-white" style="background-color: #ADD8E6;" >
     <!-- Grid container -->
-    <div class="container p-4 pb-0"  style="background-color: #FDD31D;">
+    <div class="container p-4 pb-0"  >
       <!-- Section: CTA -->
       <section class="">
         <p class="d-flex justify-content-center align-items-center">
-          <span class="me-3"><p></p> Enter with your account: <p></p></span>
+          <span class="me-3"><p></p> Entre com a sua conta: <p></p></span>
           <button type="button" class="btn btn-outline-light btn-rounded">
-            <a style="color: white;" href="login.php">Sign in</a>
+            <a style="color: white;" href="login.php">Login</a>
           </button>
         </p>
       </section>

@@ -9,7 +9,7 @@
         <title>Wrlazer</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #FDD31D;" >
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ADD8E6;" >
             <div class="container">
                     <a class="navbar-brand" href="index.php"><img src="./img/logo.png" width="200px" height="100px" style="image-rendering: pixelated;" ></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,12 +42,37 @@
                $wrlazer->produtos();
                ?>
             </div><br><br>
-     
         </center>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="..." alt="First slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Second slide">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="..." alt="Third slide">
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 <section class="">
-  <footer class="text-center text-white bg-secondary">
+  <footer class="text-center text-white" style="background-color: #ADD8E6;">
     <!-- Grid container -->
-    <div class="container p-4 pb-0" style="background-color: #FDD31D;">
+    <div class="container p-4 pb-0">
         <!-- Section: CTA -->
         <section class="">
             <p class="d-flex justify-content-center align-items-center">

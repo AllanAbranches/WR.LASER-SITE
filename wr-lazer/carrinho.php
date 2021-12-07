@@ -37,10 +37,15 @@ session_start();
         <title>Carrinho</title>
     </head>
     <body>
-        <div class="topo-carrinho">
-            <img class="logo-carrinho" src="./img/logo.png" alt="">
-        </div>
-        <br><br>
+        <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #ADD8E6;" >
+      <div class="container">
+        <a class="navbar-brand" href="index.php"><img src="./img/logo.png" width="200px" height="100px" style=" image-rendering: pixelated;"  ></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      </div>
+    </nav>
 
     <?php
 

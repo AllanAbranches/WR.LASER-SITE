@@ -11,7 +11,7 @@
     </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #FDD31D;" >
+    <nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #ADD8E6;" >
       <div class="container">
         <a class="navbar-brand" href="index.php"><img src="./img/logo.png" width="200px" height="100px" style=" image-rendering: pixelated;"  ></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -56,7 +56,7 @@
 
     <section class="" >
   <!-- Footer -->
-  <footer class="text-center text-white" style="background-color: #FDD31D;" >
+  <footer class="text-center text-white" style="background-color: #ADD8E6;" >
     <!-- Grid container -->
     <div class="container p-4 pb-0">
       <!-- Section: CTA -->
