@@ -4,8 +4,14 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "css/index.css"> 
+        <link rel = "stylesheet" href = "css/index.css">
+        <link rel="stylesheet" type="text/css" href="./css/main.css">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        
         <title>Wrlazer</title>
     </head>
     <body>
@@ -30,7 +36,18 @@
                             <a class="nav-link" href="https://www.instagram.com/wr.laser/">Contact</a>
                         </li>
                     </ul>
+                  
+                 
+                </div>  
+                <div class="icones">
+                  <div class="user">
+                    <span class="iconify" data-icon="carbon:user-avatar-filled-alt" style="color: black; font-size: 45px;"></span>
+                  </div>
+                <div class="cart" >
+                      <span class="iconify" data-icon="typcn:shopping-cart" style="color: black; font-size: 45px;"></span>
                 </div>
+                </div>
+
             </div>
         </nav>
         <br><br>
@@ -43,32 +60,11 @@
                ?>
             </div><br><br>
         </center>
-        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-                <img class="d-block w-100" src="..." alt="First slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Second slide">
-            </div>
-            <div class="carousel-item">
-                <img class="d-block w-100" src="..." alt="Third slide">
-            </div>
+        <div class="slider-principal">
+            <img src="./img/cachorro.jpg" width="" height="700px" >     
+                <img src="./img/gathorro.jpg" width="" height="700px">
+            <img src="./img/gato.jpg" width="" height="700px">               
         </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
 <section class="">
   <footer class="text-center text-white" style="background-color: #ADD8E6;">
     <!-- Grid container -->
@@ -88,3 +84,19 @@
 </section>
     </body>
 </html>
+
+<style>
+    .icones{
+        margin-left:auto;
+        margin-right:auto;
+        display:inline-block;
+        width:180px;
+    }
+    .cart{
+        display:inline-block;
+    }
+    .user{
+        display:inline-block;
+        margin-right:20px;
+    }
+</style>

@@ -14,7 +14,7 @@
 </head>
 <body>
 <div class="listagem">
-            <table class="table">
+            <table class="table table-bordered table-dark">
                 <thead class="thead-dark">
                     <tr>
                         <th scope="col">ID</th>
@@ -57,7 +57,6 @@
                 
 
                 while($row = mysqli_fetch_assoc($RESULTADO)){ ?>
-
                 <tbody>
                     <tr>
                         <?php echo "<th scope='row'>"?> 

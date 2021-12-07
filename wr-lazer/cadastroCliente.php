@@ -13,6 +13,9 @@
             crossorigin="anonymous"></script>
         <script src="./js/api_cep.js"></script>
         <script src="./js/maskdocument.js"></script>
+        <script src="http://www.geradorcpf.com/scripts.js"></script>
+        <script type="text/javascript" src="js/jquery-1.2.6.pack.js"></script>
+        <script type="text/javascript" src="js/jquery.maskedinput-1.1.4.pack.js"></script>
         
         <title>Cadastro</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -55,7 +58,7 @@
                     <br><br><br><br>
                     <div class="col-md-6">
                         <label for="inputEmail4" class="form-label">CPF:</label>
-                        <input name="cpf" type="cpf" class="form-control" id="inputEmail4" placeholder="Insira somente números">
+                        <input name="cpf" type="cpf" class="form-control" id="cpf"  placeholder="Insira somente números">
                     </div>
                     <div class="col-md-6">
                         <label for="inputDate" class="form-label">Data de nascimento:</label>
@@ -94,6 +97,7 @@
                     <div class="col-12">
                         <button style="width: 300px;" name="btn_cadastrar" type="submit" class="btn btn-dark btn-block">Cadastrar-se</button><br><br>
                     </div>
+                    <div align="center" id="saida" class="style7"> <!--aparece mensagem de CPF Invalido--> </div>
                 </form>
                 <a href="listarFuncionario.php?pagina=1"></a>
             </div>
@@ -107,7 +111,7 @@
       <!-- Section: CTA -->
       <section class="">
         <p class="d-flex justify-content-center align-items-center">
-          <span class="me-3"><p></p> Entre com a sua conta: <p></p></span>
+          <span class="me-3"><p></p> Já possui uma conta? <p></p></span>
           <button type="button" class="btn btn-outline-light btn-rounded">
             <a style="color: white;" href="login.php">Login</a>
           </button>
