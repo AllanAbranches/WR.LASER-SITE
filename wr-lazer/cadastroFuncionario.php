@@ -58,7 +58,8 @@
                     <div class="form-group col-md-12 cargo">
                         <select name="select_cargo" id="inputState" class="form-control">
                             <option selected="selected">Selecione o Cargo</option>
-                            <?php $SELECT = "SELECT*FROM tb_cargo"; $RESULTADO = mysqli_query($conexao,$SELECT);
+                            <?php $SELECT = "SELECT*FROM tb_cargo"; 
+                            $RESULTADO = mysqli_query($conexao,$SELECT);
                     while($cargo = mysqli_fetch_assoc($RESULTADO)){ ?>
                             <option value="<?php echo $cargo['id_cargo']; ?>"><?php echo $cargo['nome_cargo']; ?></option>
                             <?php } ?>

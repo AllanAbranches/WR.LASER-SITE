@@ -4,14 +4,12 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel = "stylesheet" href = "css/index.css">
-        <link rel="stylesheet" type="text/css" href="./css/main.css">
+        <link rel = "stylesheet" href = "css/index.css"> 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
-        <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-        
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <title>Wrlazer</title>
     </head>
     <body>
@@ -27,30 +25,22 @@
                             <a class="nav-link" href="Index">Produtos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="https://www.instagram.com/wr.laser/">Contact</a>
+                            <a class="nav-link" href="https://www.instagram.com/wr.laser/">Contato</a>
                         </li>
                     </ul>
                   
                  
                 </div>  
-                <div class="icones">
-                  <div class="user">
-                    <span class="iconify" data-icon="carbon:user-avatar-filled-alt" style="color: black; font-size: 45px;"></span>
-                  </div>
-                <div class="cart" >
-                      <span class="iconify" data-icon="typcn:shopping-cart" style="color: black; font-size: 45px;"></span>
+                <div class="icones"><div class="user"> 
+                    <a href="#"> <span class="iconify" data-icon="carbon:user-avatar-filled-alt" style="color: black; font-size: 45px;"></span></a>
+                </div>
+                <div class="cart" ><a href="carrinho.php?acao"><span class="iconify" data-icon="typcn:shopping-cart" style="color: black; font-size: 45px;"></span></a>
                 </div>
                 </div>
 
             </div>
         </nav>
-        <br><br>
+       <br><br><br>
         <center>
             <div class="exib-prod">
                <?php 
@@ -60,11 +50,37 @@
                ?>
             </div><br><br>
         </center>
-        <div class="slider-principal">
-            <img src="./img/cachorro.jpg" width="" height="700px" >     
-                <img src="./img/gathorro.jpg" width="" height="700px">
-            <img src="./img/gato.jpg" width="" height="700px">               
-        </div>
+        <div class="caixa" style="height:200px; margin-left:auto; margin-right:auto; display:block;">
+             <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" >
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <center>
+    <h1>Produtos mais vendidos</h1> <br><br>
+  <div class="carousel-inner" style="width: 1000px;">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/img04.jpg" alt="First slide" width="100px" height="600px">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img05.jpg" alt="Second slide" width="100px" height="600px">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/img01.png" alt="Third slide"  width="200px" height="600px">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+</center>
+        <br><br><br>
 <section class="">
   <footer class="text-center text-white" style="background-color: #ADD8E6;">
     <!-- Grid container -->
@@ -73,9 +89,9 @@
         <section class="">
             <p class="d-flex justify-content-center align-items-center">
               <span class="me-3" ><p></p> Não possui conta ainda?</span>
-              <button type="button" class="btn btn-outline-light btn-rounded">
-                Cadastre-se!
-              </button>
+             <a  style="margin-left: 10px;" href="cadastroCliente.php" type="button" class="btn btn-outline-light btn-rounded">
+                  Cadastre-se!
+            </a>
             </p>
         </section>
       <!-- Section: CTA -->
