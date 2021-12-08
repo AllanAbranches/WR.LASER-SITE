@@ -64,9 +64,5 @@ function formatar(mascara, documento){
   else if(idade()<18) {
       div.style.display = "inline";
   }
-
+  
 }
-
-$(document).ready(function(){
-    $("#cpf").mask("999.999.999-99");
-});

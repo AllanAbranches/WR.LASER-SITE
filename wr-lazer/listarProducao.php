@@ -82,8 +82,8 @@
                         <td><?php echo $row['qtd_mproduzidos']; ?></td>
                         <td><?php 
                         echo "<form action='' method='post'>
-                           <a class='btn btn-success'  href='alterarFornecedor.php?id=".$row['id_producao']."'>ALTERAR</a> 
-                           <a class='btn btn-danger' href='deletarFornecedor.php?id=".$row['id_producao']."' name='btn_excluir'>DELETAR</a></td>
+                           <a class='btn btn-success'  href='alterarProducao.php?id=".$row['id_producao']."'>ALTERAR</a> 
+                           <a class='btn btn-danger' href='deletarProducao.php?id=".$row['id_producao']."' name='btn_excluir'>DELETAR</a></td>
                            </form>";
                            
                            

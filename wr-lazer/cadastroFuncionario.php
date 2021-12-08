@@ -10,32 +10,29 @@
             href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
             integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
             crossorigin="anonymous">
-        <title>Document</title>
+        <title>Cadastro de funcionario</title>
     </head>
     <body>
         <center>
             <div class="box">
         <div class="container">
             <br>
-            <form action="" method="post" class="frm">
+            <form action="" method="post" class="shadow p-3 mb-5 bg-white rounded">
                 <div class="form-row">
+                <h1>Cadastrar funcionario</h1>
                     <div class="form-group col-md-6">
                         <input type="name" name="nome" class="form-control" placeholder="nome">
                     </div>
                     <div class="form-group col-md-6">
-                        <input
-                            type="text"
-                            name="sobrenome"
-                            class="form-control"
-                            placeholder="Sobrenome">
+                        <input type="text" name="sobrenome" class="form-control" placeholder="Sobrenome">
                     </div>
                 </div>
-                <div class="form-group"">
-                    <input type="text" name="email" class="form-control" placeholder="Eimail">
+                <div class="form-group">
+                    <input type="text" name="email" class="form-control" placeholder="Email">
                 </div>
                 <div class="form-group">
     
-                    <input type="text" class="form-control" placeholder="Password">
+                    <input type="password" class="form-control" placeholder="Password">
                 </div>
                 <div class="form-row">
                     <div class="form-group col-md-12">
@@ -80,17 +77,17 @@
                             </div>
                         </div>
                     </fieldset>
-                    <input type="submit" name="btn_cadd" class="btn btn-primary btn-lg btn-block" />
-            </form>
+                    <input value="Cadastrar" type="submit" name="btn_cadd" class="btn btn-primary btn-lig"/><p></p>
+                    <a  style="margin-left: 10px;" href="listarFuncionario.php?pagina=1" type="button" class="btn btn-success btn-lig">Listar</a>
+            </form><br><br>
             </div>
         </div>
-   
+    </center>
         </body>
     </html>
     <style>
 
         .container {
-            float:left;
            width:420px;
            margin-left:auto;
            margin-right:auto;
